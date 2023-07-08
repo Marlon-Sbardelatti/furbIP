@@ -1,5 +1,6 @@
 # furbIP 
 
+
 Bash Script for Automating .java File Creation
 
 I have created this Bash script to automate the process of creating .java files for my university classes. You can easily modify the destination folder by changing the DESTINATION variable in the script. After running the script, Visual Studio Code (VSCode) will open automatically since it's the most popular IDE. However, you can easily customize this setting as well. At the end of the script, simply change code . to the command you use to open your files, e.g., nvim ..
@@ -12,13 +13,12 @@ Open a terminal in the folder where the script is located.
 Execute the script using the following command:
 
 Copy code
-./furbIP
-
+bash script.sh
 The script will prompt you for some information, such as the .java file name and class name.
 
 After providing the requested information, the script will create the .java file in the destination defined by the DESTINATION variable.
 
-Visual Studio Code (You can change that if you want, go to the end of the file and change the 'code ..' to whatever you want. Eg: nvim ..) will open automatically with the newly created file. Make any necessary code changes.
+Visual Studio Code (or your configured IDE) will open automatically with the newly created file. Make any necessary code changes.
 
 Save the file and close the editor.
 
