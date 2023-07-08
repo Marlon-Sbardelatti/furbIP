@@ -1,6 +1,7 @@
 # furbIP 
 
 Bash Script for Automating .java File Creation
+
 I have created this Bash script to automate the process of creating .java files for my university classes. You can easily modify the destination folder by changing the DESTINATION variable in the script. After running the script, Visual Studio Code (VSCode) will open automatically since it's the most popular IDE. However, you can easily customize this setting as well. At the end of the script, simply change code . to the command you use to open your files, e.g., nvim ..
 
 Usage Instructions
@@ -25,6 +26,7 @@ You can repeat the process to create new .java files whenever needed.
 
 
 Script Bash para automatizar a criação de arquivos .java
+
 Este script Bash foi criado para automatizar o processo de criação de arquivos .java para as minhas aulas na universidade. É fácil alterar o destino dos arquivos definindo a variável DESTINATION no script. Depois de executar o script, o Visual Studio Code (VSCode) será aberto automaticamente, já que é a IDE mais popular. No entanto, você pode alterar facilmente essa configuração também. No final do script, basta alterar de code . para o comando que você usa para abrir seus arquivos, por exemplo, nvim ..
 
 Instruções de Uso
