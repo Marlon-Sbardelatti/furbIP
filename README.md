@@ -12,8 +12,8 @@ Open a terminal in the folder where the script is located.
 
 Execute the script using the following command:
 
-Copy code
-bash script.sh
+./furbIP
+
 The script will prompt you for some information, such as the .java file name and class name.
 
 After providing the requested information, the script will create the .java file in the destination defined by the DESTINATION variable.
