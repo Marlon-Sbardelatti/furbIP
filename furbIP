@@ -1,0 +1,43 @@
+#! /bin/bash
+
+DESTINATION=~/projects/JAVA-FURB
+UNIDADE=Unidade
+
+mkdir -p $DESTINATION
+cd $DESTINATION
+
+read -p "Insira o número da unidade: " VALUE
+mkdir -p $DESTINATION/$UNIDADE$VALUE
+cd $DESTINATION/$UNIDADE$VALUE
+mkdir -p $DESTINATION/$UNIDADE$VALUE/src
+cd $DESTINATION/$UNIDADE$VALUE/src
+
+read -p "Insira a quantidade de exercicios: " NUMBER
+for((i=1; i<=$NUMBER; i++))
+do
+	touch Uni${VALUE}Exe${i}.java
+done
+
+
+FILES=$DESTINATION/$UNIDADE$VALUE/src/*
+
+
+for f in $FILES
+do
+	s=${f##*/}
+	echo "import java.util.Scanner;
+
+	public class" ${s%.java} "{    
+
+	public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+
+
+		kb.close();
+    		}
+	}" | tee ${f}
+done
+
+
+code ..
+echo done
